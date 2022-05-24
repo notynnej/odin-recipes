@@ -1,0 +1,18 @@
+* {
+    font-family: Helvetica, sans-serif;
+    background-color: rgb(240, 229, 214);
+}
+#title {
+    font-size: 20px;
+    color: rgb(71, 95, 168);
+}
+.img-mask {
+    border-radius: 100%;
+    width: 360px;
+    height: 360px;
+    object-fit: cover;
+}
+h2 {
+    font-size: 24px;
+    color: rgb(214, 122, 10);
+}
