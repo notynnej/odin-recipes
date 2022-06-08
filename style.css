@@ -1,9 +1,37 @@
-* {
+body {
     font-family: Helvetica, sans-serif;
     text-align: center;
     background-color: rgb(240, 229, 214);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
 }
 #title {
-    font-size: 20px;
+    font-size: 50px;
+    font-weight: bold;
     color: rgb(71, 95, 168);
+    margin: 20px;
+}
+.img-mod {
+    border-radius: 160px;
+    border: 10px double whitesmoke;
+    width: 600px;
+}
+a {
+    text-decoration: none;
+    color: rgb(170,110,80);
+}
+ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    padding: 0;
+}
+.hover:hover {
+    display: flex;
+    transform: scale(1.2);
+    color: rgb(210,110,80);
+    transition-duration: 500ms;
+    font-weight: bold;
 }

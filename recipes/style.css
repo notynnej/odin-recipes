@@ -1,18 +1,68 @@
-* {
-    font-family: Helvetica, sans-serif;
+body {
+    font-family: 'Didact Gothic', sans-serif;
     background-color: rgb(240, 229, 214);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 20px;
 }
-#title {
-    font-size: 20px;
+.name {
+    font-size: 40px;
+    font-weight: bold;
     color: rgb(71, 95, 168);
 }
-.img-mask {
+.img-mod {
     border-radius: 100%;
     width: 360px;
     height: 360px;
     object-fit: cover;
+    margin: 0 auto 5px;
+    border: 10px double whitesmoke;
+}
+.img-mod-np {
+    object-position: -40px;
+}
+.img-mod-gbc {
+    object-position: -15px;
+}
+.img-mod:hover {
+    transform: scale(1.2);
+    transition-duration: 1s;
+    margin: 40px auto 45px;
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    gap: 10px;
+    margin: 0 auto;
+    text-align: center;
 }
 h2 {
     font-size: 24px;
     color: rgb(214, 122, 10);
+    margin: 10px 0 -10px 0;
+    text-align: center;
+}
+.ingredients, .steps {
+    width: 300px;
+    border: 2px dashed salmon;
+    border-radius: 40px;
+}
+.instructions {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+}
+ol, ul {
+    padding: 0 15px 0 36px;
+}
+.tip {
+    display: flex;
+    text-align: center;
+    margin: 0 auto 10px;
+    width: 250px;
+    font-size: 14px;
+    color: rgb(40,130,80);
 }
